@@ -1,0 +1,1 @@
+# determinant-property-practice
