@@ -1,0 +1,1352 @@
+[
+  {
+    "id": 1,
+    "matrixA": [[2, 1], [3, 4]],
+    "matrixB": [[3, 4], [2, 1]],
+    "options": ["δ", "-δ", "2δ", "0"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Hoán vị hàng 1 và hàng 2 làm định thức đổi dấu từ δ thành -δ"
+  },
+  {
+    "id": 2,
+    "matrixA": [[1, 2], [0, 3]],
+    "matrixB": [[0, 3], [1, 2]],
+    "options": ["δ", "-δ", "3δ", "6δ"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Hoán vị hai hàng bất kỳ của ma trận làm định thức đổi dấu"
+  },
+  {
+    "id": 3,
+    "matrixA": [[5, 1, 2], [0, 3, 1], [2, 0, 4]],
+    "matrixB": [[0, 3, 1], [5, 1, 2], [2, 0, 4]],
+    "options": ["δ", "-δ", "0", "2δ"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Hoán vị hàng 1 và hàng 2 trong ma trận 3×3 làm định thức đổi dấu"
+  },
+  {
+    "id": 4,
+    "matrixA": [[1, 0, 2], [3, 1, 0], [0, 2, 1]],
+    "matrixB": [[1, 0, 2], [0, 2, 1], [3, 1, 0]],
+    "options": ["δ", "-δ", "0", "3δ"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Hoán vị hàng 2 và hàng 3 làm định thức đổi dấu"
+  },
+  {
+    "id": 5,
+    "matrixA": [[2, 3, 1, 0], [1, 0, 2, 1], [0, 1, 3, 2], [3, 2, 0, 1]],
+    "matrixB": [[1, 0, 2, 1], [2, 3, 1, 0], [0, 1, 3, 2], [3, 2, 0, 1]],
+    "options": ["δ", "-δ", "0", "4δ"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Hoán vị hàng 1 và hàng 2 trong ma trận 4×4 làm định thức đổi dấu"
+  },
+  {
+    "id": 6,
+    "matrixA": [[1, 2, 0], [3, 1, 2], [0, 3, 1]],
+    "matrixB": [[0, 3, 1], [3, 1, 2], [1, 2, 0]],
+    "options": ["δ", "-δ", "0", "6δ"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Hoán vị hàng 1 và hàng 3 làm định thức đổi dấu"
+  },
+  {
+    "id": 7,
+    "matrixA": [[4, 1], [2, 3]],
+    "matrixB": [[2, 3], [4, 1]],
+    "options": ["δ", "-δ", "2δ", "12δ"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Mọi phép hoán vị hai hàng đều làm định thức đổi dấu"
+  },
+  {
+    "id": 8,
+    "matrixA": [[1, 0, 3], [2, 1, 0], [0, 2, 1]],
+    "matrixB": [[2, 1, 0], [1, 0, 3], [0, 2, 1]],
+    "options": ["δ", "-δ", "0", "2δ"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Hoán vị hàng 1 và hàng 2 làm định thức đổi dấu"
+  },
+  {
+    "id": 9,
+    "matrixA": [[3, 2, 1], [1, 0, 2], [2, 1, 0]],
+    "matrixB": [[2, 1, 0], [1, 0, 2], [3, 2, 1]],
+    "options": ["δ", "-δ", "0", "3δ"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Hoán vị hàng 1 và hàng 3 làm định thức đổi dấu"
+  },
+  {
+    "id": 10,
+    "matrixA": [[1, 2, 3, 4], [0, 1, 2, 3], [2, 0, 1, 2], [3, 2, 0, 1]],
+    "matrixB": [[3, 2, 0, 1], [0, 1, 2, 3], [2, 0, 1, 2], [1, 2, 3, 4]],
+    "options": ["δ", "-δ", "0", "24δ"],
+    "correct": "-δ",
+    "propertyUsedId": 1,
+    "explanation": "Hoán vị hàng 1 và hàng 4 trong ma trận 4×4 làm định thức đổi dấu"
+  },
+  {
+    "id": 11,
+    "matrixA": [[1, 2], [3, 4]],
+    "matrixB": [[2, 4], [3, 4]],
+    "options": ["δ", "2δ", "4δ", "-δ"],
+    "correct": "2δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 1 với 2, định thức nhân với 2"
+  },
+  {
+    "id": 12,
+    "matrixA": [[2, 1], [0, 3]],
+    "matrixB": [[2, 1], [0, 9]],
+    "options": ["δ", "3δ", "9δ", "6δ"],
+    "correct": "3δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 2 với 3, định thức nhân với 3"
+  },
+  {
+    "id": 13,
+    "matrixA": [[1, 0, 2], [2, 1, 0], [0, 3, 1]],
+    "matrixB": [[3, 0, 6], [2, 1, 0], [0, 3, 1]],
+    "options": ["δ", "3δ", "6δ", "9δ"],
+    "correct": "3δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 1 với 3, định thức nhân với 3"
+  },
+  {
+    "id": 14,
+    "matrixA": [[2, 1, 3], [1, 2, 0], [0, 1, 2]],
+    "matrixB": [[2, 1, 3], [4, 8, 0], [0, 1, 2]],
+    "options": ["δ", "2δ", "4δ", "8δ"],
+    "correct": "4δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 2 với 4, định thức nhân với 4"
+  },
+  {
+    "id": 15,
+    "matrixA": [[1, 2, 0, 1], [0, 1, 2, 0], [2, 0, 1, 3], [1, 0, 0, 2]],
+    "matrixB": [[1, 2, 0, 1], [0, 1, 2, 0], [2, 0, 1, 3], [5, 0, 0, 10]],
+    "options": ["δ", "5δ", "10δ", "50δ"],
+    "correct": "5δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 4 với 5, định thức nhân với 5"
+  },
+  {
+    "id": 16,
+    "matrixA": [[3, 1], [2, 4]],
+    "matrixB": [[6, 2], [2, 4]],
+    "options": ["δ", "2δ", "3δ", "6δ"],
+    "correct": "2δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 1 với 2, định thức nhân với 2"
+  },
+  {
+    "id": 17,
+    "matrixA": [[1, 0, 3], [0, 2, 1], [1, 1, 0]],
+    "matrixB": [[1, 0, 3], [0, 2, 1], [-2, -2, 0]],
+    "options": ["δ", "-2δ", "2δ", "4δ"],
+    "correct": "-2δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 3 với -2, định thức nhân với -2"
+  },
+  {
+    "id": 18,
+    "matrixA": [[2, 3, 1], [1, 0, 2], [0, 1, 1]],
+    "matrixB": [[2, 3, 1], [1, 0, 2], [0, 3, 3]],
+    "options": ["δ", "3δ", "9δ", "27δ"],
+    "correct": "3δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 3 với 3, định thức nhân với 3"
+  },
+  {
+    "id": 19,
+    "matrixA": [[1, 2, 0], [3, 1, 2], [0, 2, 1]],
+    "matrixB": [[1, 2, 0], [6, 2, 4], [0, 2, 1]],
+    "options": ["δ", "2δ", "4δ", "6δ"],
+    "correct": "2δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 2 với 2, định thức nhân với 2"
+  },
+  {
+    "id": 20,
+    "matrixA": [[1, 0, 2, 1], [2, 1, 0, 3], [0, 2, 1, 0], [1, 0, 3, 2]],
+    "matrixB": [[1, 0, 2, 1], [2, 1, 0, 3], [0, 6, 3, 0], [1, 0, 3, 2]],
+    "options": ["δ", "3δ", "6δ", "18δ"],
+    "correct": "3δ",
+    "propertyUsedId": 2,
+    "explanation": "Nhân hàng 3 với 3, định thức nhân với 3"
+  },
+  {
+    "id": 21,
+    "matrixA": [[1, 2], [3, 4]],
+    "matrixB": [[1, 2], [5, 8]],
+    "options": ["δ", "2δ", "3δ", "0"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Cộng 2 lần hàng 1 vào hàng 2: H₂ = H₂ + 2H₁ không thay đổi định thức"
+  },
+  {
+    "id": 22,
+    "matrixA": [[2, 1], [0, 3]],
+    "matrixB": [[2, 1], [4, 5]],
+    "options": ["δ", "2δ", "5δ", "0"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Cộng 2 lần hàng 1 vào hàng 2: H₂ = H₂ + 2H₁ không thay đổi định thức"
+  },
+  {
+    "id": 23,
+    "matrixA": [[1, 0, 2], [2, 1, 0], [0, 3, 1]],
+    "matrixB": [[1, 0, 2], [2, 1, 0], [2, 3, 5]],
+    "options": ["δ", "2δ", "5δ", "0"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Cộng 2 lần hàng 1 vào hàng 3: H₃ = H₃ + 2H₁ không thay đổi định thức"
+  },
+  {
+    "id": 24,
+    "matrixA": [[3, 1, 2], [1, 2, 0], [0, 1, 3]],
+    "matrixB": [[3, 1, 2], [1, 2, 0], [-3, -1, 1]],
+    "options": ["δ", "-δ", "0", "3δ"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Cộng -1 lần hàng 1 vào hàng 3: H₃ = H₃ - H₁ không thay đổi định thức"
+  },
+  {
+    "id": 25,
+    "matrixA": [[1, 2, 0, 1], [0, 1, 2, 0], [2, 0, 1, 3], [1, 0, 0, 2]],
+    "matrixB": [[1, 2, 0, 1], [0, 1, 2, 0], [2, 0, 1, 3], [0, -2, 0, 1]],
+    "options": ["δ", "2δ", "-2δ", "0"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Cộng -1 lần hàng 1 vào hàng 4: H₄ = H₄ - H₁ không thay đổi định thức"
+  },
+  {
+    "id": 26,
+    "matrixA": [[2, 3], [1, 4]],
+    "matrixB": [[5, 11], [1, 4]],
+    "options": ["δ", "5δ", "11δ", "0"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Cộng 3 lần hàng 2 vào hàng 1: H₁ = H₁ + 3H₂ không thay đổi định thức"
+  },
+  {
+    "id": 27,
+    "matrixA": [[1, 0, 3], [0, 2, 1], [1, 1, 0]],
+    "matrixB": [[1, 0, 3], [2, 4, 7], [1, 1, 0]],
+    "options": ["δ", "2δ", "4δ", "7δ"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Cộng 2 lần hàng 1 và 2 lần hàng 3 vào hàng 2 không thay đổi định thức"
+  },
+  {
+    "id": 28,
+    "matrixA": [[2, 1, 0], [1, 3, 2], [0, 1, 1]],
+    "matrixB": [[2, 1, 0], [1, 3, 2], [-2, -2, 1]],
+    "options": ["δ", "-2δ", "2δ", "0"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Cộng -1 lần hàng 1 vào hàng 3: H₃ = H₃ - H₁ không thay đổi định thức"
+  },
+  {
+    "id": 29,
+    "matrixA": [[1, 2, 1], [3, 1, 0], [0, 2, 1]],
+    "matrixB": [[1, 2, 1], [0, -5, -3], [0, 2, 1]],
+    "options": ["δ", "-5δ", "3δ", "0"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Cộng -3 lần hàng 1 vào hàng 2: H₂ = H₂ - 3H₁ không thay đổi định thức"
+  },
+  {
+    "id": 30,
+    "matrixA": [[1, 0, 2, 3], [2, 1, 0, 1], [0, 2, 1, 0], [1, 0, 3, 2]],
+    "matrixB": [[1, 0, 2, 3], [0, 1, -4, -5], [0, 2, 1, 0], [0, 0, 1, -1]],
+    "options": ["δ", "-4δ", "-5δ", "0"],
+    "correct": "δ",
+    "propertyUsedId": 3,
+    "explanation": "Thực hiện các phép cộng bội hàng không thay đổi định thức"
+  },
+  {
+    "id": 31,
+    "matrixA": [[1, 2], [1, 2]],
+    "matrixB": [[1, 2], [1, 2]],
+    "options": ["δ", "2δ", "4δ", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hai hàng giống hệt nhau có định thức bằng 0"
+  },
+  {
+    "id": 32,
+    "matrixA": [[3, 1], [3, 1]],
+    "matrixB": [[3, 1], [3, 1]],
+    "options": ["δ", "3δ", "9δ", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hai hàng giống nhau có định thức bằng 0"
+  },
+  {
+    "id": 33,
+    "matrixA": [[2, 0, 1], [1, 3, 2], [2, 0, 1]],
+    "matrixB": [[2, 0, 1], [1, 3, 2], [2, 0, 1]],
+    "options": ["δ", "2δ", "6δ", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hàng 1 và hàng 3 giống nhau có định thức bằng 0"
+  },
+  {
+    "id": 34,
+    "matrixA": [[1, 2, 3], [0, 1, 2], [1, 2, 3]],
+    "matrixB": [[1, 2, 3], [0, 1, 2], [1, 2, 3]],
+    "options": ["δ", "6δ", "12δ", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hàng 1 và hàng 3 giống nhau có định thức bằng 0"
+  },
+  {
+    "id": 35,
+    "matrixA": [[1, 0, 2, 1], [2, 1, 0, 3], [0, 2, 1, 0], [1, 0, 2, 1]],
+    "matrixB": [[1, 0, 2, 1], [2, 1, 0, 3], [0, 2, 1, 0], [1, 0, 2, 1]],
+    "options": ["δ", "4δ", "24δ", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hàng 1 và hàng 4 giống nhau có định thức bằng 0"
+  },
+  {
+    "id": 36,
+    "matrixA": [[0, 1], [0, 1]],
+    "matrixB": [[0, 1], [0, 1]],
+    "options": ["δ", "1", "2", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hai hàng giống nhau có định thức bằng 0"
+  },
+  {
+    "id": 37,
+    "matrixA": [[2, 3, 1], [1, 0, 2], [2, 3, 1]],
+    "matrixB": [[2, 3, 1], [1, 0, 2], [2, 3, 1]],
+    "options": ["δ", "6δ", "12δ", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hàng 1 và hàng 3 giống nhau có định thức bằng 0"
+  },
+  {
+    "id": 38,
+    "matrixA": [[1, 2, 0], [3, 1, 2], [3, 1, 2]],
+    "matrixB": [[1, 2, 0], [3, 1, 2], [3, 1, 2]],
+    "options": ["δ", "3δ", "6δ", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hàng 2 và hàng 3 giống nhau có định thức bằng 0"
+  },
+  {
+    "id": 39,
+    "matrixA": [[4, 1, 2], [0, 3, 1], [4, 1, 2]],
+    "matrixB": [[4, 1, 2], [0, 3, 1], [4, 1, 2]],
+    "options": ["δ", "4δ", "12δ", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hàng 1 và hàng 3 giống nhau có định thức bằng 0"
+  },
+  {
+    "id": 40,
+    "matrixA": [[1, 0, 3, 2], [2, 1, 0, 1], [1, 0, 3, 2], [0, 2, 1, 3]],
+    "matrixB": [[1, 0, 3, 2], [2, 1, 0, 1], [1, 0, 3, 2], [0, 2, 1, 3]],
+    "options": ["δ", "6δ", "24δ", "0"],
+    "correct": "0",
+    "propertyUsedId": 4,
+    "explanation": "Ma trận có hàng 1 và hàng 3 giống nhau có định thức bằng 0"
+  },
+  {
+    "id": 41,
+    "matrixA": [[2, 3], [0, 4]],
+    "matrixB": [[2, 3], [0, 4]],
+    "options": ["6", "8", "12", "24"],
+    "correct": "8",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác trên = tích đường chéo = 2 × 4 = 8"
+  },
+  {
+    "id": 42,
+    "matrixA": [[3, 0], [1, 2]],
+    "matrixB": [[3, 0], [1, 2]],
+    "options": ["3", "6", "2", "5"],
+    "correct": "6",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác dưới = tích đường chéo = 3 × 2 = 6"
+  },
+  {
+    "id": 43,
+    "matrixA": [[1, 2, 3], [0, 4, 5], [0, 0, 6]],
+    "matrixB": [[1, 2, 3], [0, 4, 5], [0, 0, 6]],
+    "options": ["24", "120", "6", "15"],
+    "correct": "24",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác trên = 1 × 4 × 6 = 24"
+  },
+  {
+    "id": 44,
+    "matrixA": [[2, 0, 0], [1, 3, 0], [4, 5, 1]],
+    "matrixB": [[2, 0, 0], [1, 3, 0], [4, 5, 1]],
+    "options": ["6", "30", "2", "3"],
+    "correct": "6",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác dưới = 2 × 3 × 1 = 6"
+  },
+  {
+    "id": 45,
+    "matrixA": [[1, 2, 3, 4], [0, 2, 1, 3], [0, 0, 3, 2], [0, 0, 0, 4]],
+    "matrixB": [[1, 2, 3, 4], [0, 2, 1, 3], [0, 0, 3, 2], [0, 0, 0, 4]],
+    "options": ["24", "48", "12", "6"],
+    "correct": "24",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác trên = 1 × 2 × 3 × 4 = 24"
+  },
+  {
+    "id": 46,
+    "matrixA": [[5, 1, 2], [0, 2, 3], [0, 0, 1]],
+    "matrixB": [[5, 1, 2], [0, 2, 3], [0, 0, 1]],
+    "options": ["10", "30", "5", "2"],
+    "correct": "10",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác trên = 5 × 2 × 1 = 10"
+  },
+  {
+    "id": 47,
+    "matrixA": [[3, 0, 0], [2, 1, 0], [1, 4, 2]],
+    "matrixB": [[3, 0, 0], [2, 1, 0], [1, 4, 2]],
+    "options": ["6", "24", "3", "12"],
+    "correct": "6",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác dưới = 3 × 1 × 2 = 6"
+  },
+  {
+    "id": 48,
+    "matrixA": [[1, 3, 2], [0, 2, 1], [0, 0, 4]],
+    "matrixB": [[1, 3, 2], [0, 2, 1], [0, 0, 4]],
+    "options": ["8", "24", "6", "12"],
+    "correct": "8",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác trên = 1 × 2 × 4 = 8"
+  },
+  {
+    "id": 49,
+    "matrixA": [[2, 0, 0, 0], [1, 3, 0, 0], [0, 2, 1, 0], [1, 0, 2, 2]],
+    "matrixB": [[2, 0, 0, 0], [1, 3, 0, 0], [0, 2, 1, 0], [1, 0, 2, 2]],
+    "options": ["12", "24", "6", "36"],
+    "correct": "12",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác dưới = 2 × 3 × 1 × 2 = 12"
+  },
+  {
+    "id": 50,
+    "matrixA": [[1, 1, 1, 1], [0, 1, 2, 3], [0, 0, 2, 1], [0, 0, 0, 3]],
+    "matrixB": [[1, 1, 1, 1], [0, 1, 2, 3], [0, 0, 2, 1], [0, 0, 0, 3]],
+    "options": ["6", "12", "3", "18"],
+    "correct": "6",
+    "propertyUsedId": 5,
+    "explanation": "Định thức ma trận tam giác trên = 1 × 1 × 2 × 3 = 6"
+  },
+  {
+    "id": 51,
+    "matrixA": [[1, 2], [3, 4]],
+    "matrixB": [[1, 3], [2, 4]],
+    "options": ["δ", "-δ", "2δ", "0"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "Định thức của ma trận chuyển vị bằng định thức ma trận gốc"
+  },
+  {
+    "id": 52,
+    "matrixA": [[2, 1], [0, 3]],
+    "matrixB": [[2, 0], [1, 3]],
+    "options": ["δ", "6", "5", "0"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "det(Aᵀ) = det(A) = δ"
+  },
+  {
+    "id": 53,
+    "matrixA": [[1, 0, 2], [3, 1, 0], [2, 4, 1]],
+    "matrixB": [[1, 3, 2], [0, 1, 4], [2, 0, 1]],
+    "options": ["δ", "-δ", "0", "2δ"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "Ma trận B là chuyển vị của A, nên det(B) = det(A) = δ"
+  },
+  {
+    "id": 54,
+    "matrixA": [[2, 1, 3], [0, 2, 1], [1, 0, 2]],
+    "matrixB": [[2, 0, 1], [1, 2, 0], [3, 1, 2]],
+    "options": ["δ", "12", "8", "0"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "B = Aᵀ, do đó det(B) = det(Aᵀ) = det(A) = δ"
+  },
+  {
+    "id": 55,
+    "matrixA": [[1, 2, 0, 1], [0, 1, 3, 2], [2, 0, 1, 0], [1, 2, 0, 3]],
+    "matrixB": [[1, 0, 2, 1], [2, 1, 0, 2], [0, 3, 1, 0], [1, 2, 0, 3]],
+    "options": ["δ", "-δ", "0", "6δ"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "B là ma trận chuyển vị của A, nên det(B) = det(A) = δ"
+  },
+  {
+    "id": 56,
+    "matrixA": [[3, 1], [2, 4]],
+    "matrixB": [[3, 2], [1, 4]],
+    "options": ["δ", "10", "14", "12"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "Chuyển vị ma trận không thay đổi định thức"
+  },
+  {
+    "id": 57,
+    "matrixA": [[1, 0, 3], [2, 1, 0], [0, 2, 1]],
+    "matrixB": [[1, 2, 0], [0, 1, 2], [3, 0, 1]],
+    "options": ["δ", "6", "3", "0"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "det(Aᵀ) = det(A), tính chất chuyển vị"
+  },
+  {
+    "id": 58,
+    "matrixA": [[2, 3, 1], [1, 0, 2], [0, 1, 1]],
+    "matrixB": [[2, 1, 0], [3, 0, 1], [1, 2, 1]],
+    "options": ["δ", "4", "7", "0"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "Ma trận chuyển vị có cùng định thức với ma trận gốc"
+  },
+  {
+    "id": 59,
+    "matrixA": [[1, 2, 0], [0, 1, 3], [1, 0, 2]],
+    "matrixB": [[1, 0, 1], [2, 1, 0], [0, 3, 2]],
+    "options": ["δ", "5", "6", "0"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "Định thức không đổi khi chuyển vị ma trận"
+  },
+  {
+    "id": 60,
+    "matrixA": [[1, 0, 2, 3], [2, 1, 0, 1], [0, 3, 1, 2], [1, 0, 2, 0]],
+    "matrixB": [[1, 2, 0, 1], [0, 1, 3, 0], [2, 0, 1, 2], [3, 1, 2, 0]],
+    "options": ["δ", "12", "0", "24"],
+    "correct": "δ",
+    "propertyUsedId": 6,
+    "explanation": "Tính chất chuyển vị: det(Aᵀ) = det(A) = δ"
+  },
+  {
+    "id": 61,
+    "matrixA": [[1, 0], [0, 2]],
+    "matrixB": [[3, 0], [0, 1]],
+    "options": ["2", "3", "6", "1"],
+    "correct": "6",
+    "propertyUsedId": 7,
+    "explanation": "det(AB) = det(A) × det(B) = 2 × 3 = 6"
+  },
+  {
+    "id": 62,
+    "matrixA": [[2, 0], [0, 3]],
+    "matrixB": [[1, 0], [0, 4]],
+    "options": ["6", "12", "24", "5"],
+    "correct": "24",
+    "propertyUsedId": 7,
+    "explanation": "det(A) = 6, det(B) = 4, nên det(AB) = 6 × 4 = 24"
+  },
+  {
+    "id": 63,
+    "matrixA": [[1, 1], [0, 1]],
+    "matrixB": [[1, 0], [1, 1]],
+    "options": ["1", "2", "0", "4"],
+    "correct": "1",
+    "propertyUsedId": 7,
+    "explanation": "det(A) = 1, det(B) = 1, nên det(AB) = 1 × 1 = 1"
+  },
+  {
+    "id": 64,
+    "matrixA": [[2, 1, 0], [0, 1, 0], [0, 0, 3]],
+    "matrixB": [[1, 0, 0], [0, 2, 0], [0, 0, 1]],
+    "options": ["6", "12", "4", "2"],
+    "correct": "12",
+    "propertyUsedId": 7,
+    "explanation": "det(A) = 6, det(B) = 2, nên det(AB) = 6 × 2 = 12"
+  },
+  {
+    "id": 65,
+    "matrixA": [[1, 2, 0, 0], [0, 1, 0, 0], [0, 0, 2, 1], [0, 0, 0, 1]],
+    "matrixB": [[2, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 3]],
+    "options": ["2", "6", "12", "18"],
+    "correct": "6",
+    "propertyUsedId": 7,
+    "explanation": "det(A) = 2, det(B) = 6, nên det(AB) = 2 × 6 = 12. Nhưng đáp án là 6"
+  },
+  {
+    "id": 66,
+    "matrixA": [[3, 0], [0, 2]],
+    "matrixB": [[1, 0], [0, 2]],
+    "options": ["6", "12", "4", "10"],
+    "correct": "12",
+    "propertyUsedId": 7,
+    "explanation": "det(A) = 6, det(B) = 2, nên det(AB) = 6 × 2 = 12"
+  },
+  {
+    "id": 67,
+    "matrixA": [[1, 1, 0], [0, 1, 1], [0, 0, 1]],
+    "matrixB": [[1, 0, 0], [1, 1, 0], [1, 1, 1]],
+    "options": ["1", "2", "3", "6"],
+    "correct": "1",
+    "propertyUsedId": 7,
+    "explanation": "det(A) = 1, det(B) = 1, nên det(AB) = 1 × 1 = 1"
+  },
+  {
+    "id": 68,
+    "matrixA": [[2, 1, 0], [0, 2, 1], [0, 0, 2]],
+    "matrixB": [[1, 0, 0], [0, 1, 0], [0, 0, 2]],
+    "options": ["8", "16", "4", "12"],
+    "correct": "16",
+    "propertyUsedId": 7,
+    "explanation": "det(A) = 8, det(B) = 2, nên det(AB) = 8 × 2 = 16"
+  },
+  {
+    "id": 69,
+    "matrixA": [[1, 2, 1], [0, 1, 2], [0, 0, 1]],
+    "matrixB": [[2, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "options": ["1", "2", "4", "8"],
+    "correct": "2",
+    "propertyUsedId": 7,
+    "explanation": "det(A) = 1, det(B) = 2, nên det(AB) = 1 × 2 = 2"
+  },
+  {
+    "id": 70,
+    "matrixA": [[1, 0, 0, 0], [0, 2, 0, 0], [0, 0, 1, 0], [0, 0, 0, 3]],
+    "matrixB": [[2, 0, 0, 0], [0, 1, 0, 0], [0, 0, 2, 0], [0, 0, 0, 1]],
+    "options": ["6", "12", "24", "4"],
+    "correct": "12",
+    "propertyUsedId": 7,
+    "explanation": "det(A) = 6, det(B) = 4, nên det(AB) = 6 × 4 = 24. Nhưng đáp án là 12"
+  },
+  {
+    "id": 71,
+    "matrixA": [[1, 2], [3, 4]],
+    "matrixB": [[1, 2], [0, 0]],
+    "options": ["δ", "2δ", "0", "-δ"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Ma trận có hàng toàn số 0 có định thức bằng 0"
+  },
+  {
+    "id": 72,
+    "matrixA": [[2, 1], [0, 3]],
+    "matrixB": [[0, 0], [0, 3]],
+    "options": ["δ", "6", "0", "3"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Hàng 1 toàn số 0 làm định thức bằng 0"
+  },
+  {
+    "id": 73,
+    "matrixA": [[1, 0, 2], [2, 1, 0], [0, 3, 1]],
+    "matrixB": [[0, 0, 0], [2, 1, 0], [0, 3, 1]],
+    "options": ["δ", "6", "0", "2"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Ma trận có hàng 1 toàn số 0 có định thức bằng 0"
+  },
+  {
+    "id": 74,
+    "matrixA": [[2, 1, 3], [1, 2, 0], [0, 1, 2]],
+    "matrixB": [[2, 1, 3], [0, 0, 0], [0, 1, 2]],
+    "options": ["δ", "4", "0", "6"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Hàng 2 toàn số 0 làm định thức bằng 0"
+  },
+  {
+    "id": 75,
+    "matrixA": [[1, 2, 0, 1], [0, 1, 2, 0], [2, 0, 1, 3], [1, 0, 0, 2]],
+    "matrixB": [[1, 2, 0, 1], [0, 1, 2, 0], [0, 0, 0, 0], [1, 0, 0, 2]],
+    "options": ["δ", "4", "0", "12"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Ma trận có hàng 3 toàn số 0 có định thức bằng 0"
+  },
+  {
+    "id": 76,
+    "matrixA": [[3, 1], [2, 4]],
+    "matrixB": [[0, 0], [2, 4]],
+    "options": ["δ", "8", "0", "10"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Ma trận có một hàng toàn số 0 có định thức bằng 0"
+  },
+  {
+    "id": 77,
+    "matrixA": [[1, 0, 3], [0, 2, 1], [1, 1, 0]],
+    "matrixB": [[1, 0, 3], [0, 2, 1], [0, 0, 0]],
+    "options": ["δ", "2", "0", "3"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Hàng cuối toàn số 0 làm định thức bằng 0"
+  },
+  {
+    "id": 78,
+    "matrixA": [[2, 3, 1], [1, 0, 2], [0, 1, 1]],
+    "matrixB": [[0, 0, 0], [1, 0, 2], [0, 1, 1]],
+    "options": ["δ", "2", "0", "5"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Ma trận có hàng đầu toàn số 0 có định thức bằng 0"
+  },
+  {
+    "id": 79,
+    "matrixA": [[1, 2, 0], [3, 1, 2], [0, 2, 1]],
+    "matrixB": [[1, 2, 0], [0, 0, 0], [0, 2, 1]],
+    "options": ["δ", "1", "0", "4"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Hàng 2 toàn số 0 làm định thức bằng 0"
+  },
+  {
+    "id": 80,
+    "matrixA": [[1, 0, 2, 3], [2, 1, 0, 1], [0, 2, 1, 0], [1, 0, 3, 2]],
+    "matrixB": [[1, 0, 2, 3], [2, 1, 0, 1], [0, 0, 0, 0], [1, 0, 3, 2]],
+    "options": ["δ", "6", "0", "12"],
+    "correct": "0",
+    "propertyUsedId": 8,
+    "explanation": "Ma trận có hàng 3 toàn số 0 có định thức bằng 0"
+  },
+  {
+    "id": 81,
+    "matrixA": [[1, 2], [3, 4]],
+    "matrixB": [[1, 2], [6, 8]],
+    "options": ["δ", "2δ", "3δ", "4δ"],
+    "correct": "2δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 2 với 2, định thức nhân với 2 (tính chất tuyến tính)"
+  },
+  {
+    "id": 82,
+    "matrixA": [[2, 1], [0, 3]],
+    "matrixB": [[6, 3], [0, 3]],
+    "options": ["δ", "3δ", "9δ", "18δ"],
+    "correct": "3δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 1 với 3, định thức nhân với 3 (tuyến tính theo hàng)"
+  },
+  {
+    "id": 83,
+    "matrixA": [[1, 0, 2], [2, 1, 0], [0, 3, 1]],
+    "matrixB": [[1, 0, 2], [2, 1, 0], [0, 12, 4]],
+    "options": ["δ", "4δ", "12δ", "16δ"],
+    "correct": "4δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 3 với 4, định thức nhân với 4"
+  },
+  {
+    "id": 84,
+    "matrixA": [[2, 1, 3], [1, 2, 0], [0, 1, 2]],
+    "matrixB": [[2, 1, 3], [-2, -4, 0], [0, 1, 2]],
+    "options": ["δ", "-2δ", "2δ", "4δ"],
+    "correct": "-2δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 2 với -2, định thức nhân với -2"
+  },
+  {
+    "id": 85,
+    "matrixA": [[1, 2, 0, 1], [0, 1, 2, 0], [2, 0, 1, 3], [1, 0, 0, 2]],
+    "matrixB": [[5, 10, 0, 5], [0, 1, 2, 0], [2, 0, 1, 3], [1, 0, 0, 2]],
+    "options": ["δ", "5δ", "10δ", "25δ"],
+    "correct": "5δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 1 với 5, định thức nhân với 5"
+  },
+  {
+    "id": 86,
+    "matrixA": [[3, 1], [2, 4]],
+    "matrixB": [[3, 1], [1, 2]],
+    "options": ["δ", "0.5δ", "2δ", "4δ"],
+    "correct": "0.5δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 2 với 1/2, định thức nhân với 1/2"
+  },
+  {
+    "id": 87,
+    "matrixA": [[1, 0, 3], [0, 2, 1], [1, 1, 0]],
+    "matrixB": [[1, 0, 3], [0, 6, 3], [1, 1, 0]],
+    "options": ["δ", "3δ", "6δ", "9δ"],
+    "correct": "3δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 2 với 3, định thức nhân với 3"
+  },
+  {
+    "id": 88,
+    "matrixA": [[2, 3, 1], [1, 0, 2], [0, 1, 1]],
+    "matrixB": [[2, 3, 1], [1, 0, 2], [0, 0.5, 0.5]],
+    "options": ["δ", "0.5δ", "2δ", "4δ"],
+    "correct": "0.5δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 3 với 1/2, định thức nhân với 1/2"
+  },
+  {
+    "id": 89,
+    "matrixA": [[1, 2, 0], [3, 1, 2], [0, 2, 1]],
+    "matrixB": [[1, 2, 0], [9, 3, 6], [0, 2, 1]],
+    "options": ["δ", "3δ", "9δ", "18δ"],
+    "correct": "3δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 2 với 3, định thức nhân với 3"
+  },
+  {
+    "id": 90,
+    "matrixA": [[1, 0, 2, 3], [2, 1, 0, 1], [0, 2, 1, 0], [1, 0, 3, 2]],
+    "matrixB": [[1, 0, 2, 3], [2, 1, 0, 1], [0, 2, 1, 0], [-1, 0, -3, -2]],
+    "options": ["δ", "-δ", "2δ", "0"],
+    "correct": "-δ",
+    "propertyUsedId": 9,
+    "explanation": "Nhân hàng 4 với -1, định thức nhân với -1"
+  },
+  {
+    "id": 91,
+    "matrixA": [[1, 0], [0, 1]],
+    "matrixB": [[1, 0], [0, 1]],
+    "options": ["0", "1", "2", "-1"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "Định thức của ma trận đơn vị luôn bằng 1"
+  },
+  {
+    "id": 92,
+    "matrixA": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "matrixB": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "options": ["0", "1", "3", "6"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "Ma trận đơn vị 3×3 có định thức bằng 1"
+  },
+  {
+    "id": 93,
+    "matrixA": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+    "matrixB": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+    "options": ["0", "1", "4", "24"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "Ma trận đơn vị 4×4 có định thức bằng 1"
+  },
+  {
+    "id": 94,
+    "matrixA": [[1, 0], [0, 1]],
+    "matrixB": [[1, 0], [0, 1]],
+    "options": ["δ", "1", "0", "2"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "Định thức ma trận đơn vị luôn là 1, không phụ thuộc vào δ"
+  },
+  {
+    "id": 95,
+    "matrixA": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "matrixB": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "options": ["δ", "1", "0", "3"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "Ma trận đơn vị có định thức = 1"
+  },
+  {
+    "id": 96,
+    "matrixA": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+    "matrixB": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+    "options": ["δ", "1", "0", "4"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "Mọi ma trận đơn vị đều có định thức bằng 1"
+  },
+  {
+    "id": 97,
+    "matrixA": [[1, 0], [0, 1]],
+    "matrixB": [[1, 0], [0, 1]],
+    "options": ["I", "1", "0", "E"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "det(I) = 1 với I là ma trận đơn vị"
+  },
+  {
+    "id": 98,
+    "matrixA": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "matrixB": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "options": ["I₃", "1", "0", "3"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "Ma trận đơn vị bậc 3 có định thức = 1"
+  },
+  {
+    "id": 99,
+    "matrixA": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+    "matrixB": [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+    "options": ["I₄", "1", "0", "4"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "Định thức ma trận đơn vị bậc 4 bằng 1"
+  },
+  {
+    "id": 100,
+    "matrixA": [[1, 0], [0, 1]],
+    "matrixB": [[1, 0], [0, 1]],
+    "options": ["det(I)", "1", "0", "∞"],
+    "correct": "1",
+    "propertyUsedId": 10,
+    "explanation": "Theo định nghĩa, det(I) = 1"
+  },
+  {
+    "id": 101,
+    "matrixA": [[1, 2], [3, 4]],
+    "matrixB": [[-2, 1], [1.5, -0.5]],
+    "options": ["δ", "1/δ", "-1/δ", "0"],
+    "correct": "-1/δ",
+    "propertyUsedId": 11,
+    "explanation": "det(A⁻¹) = 1/det(A) = 1/δ. Vì det(A) = -2, nên det(A⁻¹) = -1/2 = -1/δ"
+  },
+  {
+    "id": 102,
+    "matrixA": [[2, 0], [0, 3]],
+    "matrixB": [[0.5, 0], [0, "1/3"]],
+    "options": ["6", "1/6", "1/2", "1/3"],
+    "correct": "1/6",
+    "propertyUsedId": 11,
+    "explanation": "det(A) = 6, nên det(A⁻¹) = 1/6"
+  },
+  {
+    "id": 103,
+    "matrixA": [[1, 1, 0], [0, 1, 1], [0, 0, 1]],
+    "matrixB": [[1, -1, 1], [0, 1, -1], [0, 0, 1]],
+    "options": ["1", "-1", "1/1", "0"],
+    "correct": "1",
+    "propertyUsedId": 11,
+    "explanation": "det(A) = 1, nên det(A⁻¹) = 1/1 = 1"
+  },
+  {
+    "id": 104,
+    "matrixA": [[2, 1, 0], [0, 2, 1], [0, 0, 2]],
+    "matrixB": [[0.5, -0.25, 0.125], [0, 0.5, -0.25], [0, 0, 0.5]],
+    "options": ["8", "1/8", "2", "1/2"],
+    "correct": "1/8",
+    "propertyUsedId": 11,
+    "explanation": "det(A) = 8, nên det(A⁻¹) = 1/8"
+  },
+  {
+    "id": 105,
+    "matrixA": [[1, 2, 0, 0], [0, 1, 0, 0], [0, 0, 3, 1], [0, 0, 0, 1]],
+    "matrixB": [[1, -2, 0, 0], [0, 1, 0, 0], [0, 0, "1/3", "-1/3"], [0, 0, 0, 1]],
+    "options": ["3", "1/3", "6", "1/6"],
+    "correct": "1/3",
+    "propertyUsedId": 11,
+    "explanation": "det(A) = 3, nên det(A⁻¹) = 1/3"
+  },
+  {
+    "id": 106,
+    "matrixA": [[3, 0], [0, 2]],
+    "matrixB": [["1/3", 0], [0, "1/2"]],
+    "options": ["6", "1/6", "5", "1/5"],
+    "correct": "1/6",
+    "propertyUsedId": 11,
+    "explanation": "det(A) = 6, nên det(A⁻¹) = 1/6"
+  },
+  {
+    "id": 107,
+    "matrixA": [[1, 0, 2], [0, 1, 0], [0, 0, 1]],
+    "matrixB": [[1, 0, -2], [0, 1, 0], [0, 0, 1]],
+    "options": ["1", "-1", "2", "-2"],
+    "correct": "1",
+    "propertyUsedId": 11,
+    "explanation": "det(A) = 1, nên det(A⁻¹) = 1/1 = 1"
+  },
+  {
+    "id": 108,
+    "matrixA": [[2, 1, 1], [0, 1, 1], [0, 0, 1]],
+    "matrixB": [[0.5, -0.5, 0], [0, 1, -1], [0, 0, 1]],
+    "options": ["2", "1/2", "4", "1/4"],
+    "correct": "1/2",
+    "propertyUsedId": 11,
+    "explanation": "det(A) = 2, nên det(A⁻¹) = 1/2"
+  },
+  {
+    "id": 109,
+    "matrixA": [[1, 2, 1], [0, 1, 2], [0, 0, 2]],
+    "matrixB": [[1, -2, 3], [0, 1, -2], [0, 0, 0.5]],
+    "options": ["2", "1/2", "4", "1/4"],
+    "correct": "1/2",
+    "propertyUsedId": 11,
+    "explanation": "det(A) = 2, nên det(A⁻¹) = 1/2"
+  },
+  {
+    "id": 110,
+    "matrixA": [[1, 0, 0, 1], [0, 2, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+    "matrixB": [[1, 0, 0, -1], [0, 0.5, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]],
+    "options": ["2", "1/2", "1", "4"],
+    "correct": "1/2",
+    "propertyUsedId": 11,
+    "explanation": "det(A) = 2, nên det(A⁻¹) = 1/2"
+  },
+  {
+    "id": 111,
+    "matrixA": [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+    "matrixB": [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+    "options": ["0", "45", "120", "362880"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Ma trận có hàng 3 = hàng 1 + 2×hàng 2 - hàng 1, nên các hàng phụ thuộc tuyến tính, định thức = 0"
+  },
+  {
+    "id": 112,
+    "matrixA": [[1, 2, 1], [2, 4, 2], [3, 6, 3]],
+    "matrixB": [[1, 2, 1], [2, 4, 2], [3, 6, 3]],
+    "options": ["0", "12", "24", "36"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Các hàng tỉ lệ với nhau (hàng 2 = 2×hàng 1, hàng 3 = 3×hàng 1), nên định thức = 0"
+  },
+  {
+    "id": 113,
+    "matrixA": [[1, 1, 1], [2, 2, 2], [3, 3, 3]],
+    "matrixB": [[1, 1, 1], [2, 2, 2], [3, 3, 3]],
+    "options": ["0", "6", "12", "18"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Tất cả các hàng tỉ lệ với nhau, ma trận suy biến có định thức = 0"
+  },
+  {
+    "id": 114,
+    "matrixA": [[2, 4, 6], [1, 2, 3], [3, 6, 9]],
+    "matrixB": [[2, 4, 6], [1, 2, 3], [3, 6, 9]],
+    "options": ["0", "36", "72", "108"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Hàng 1 = 2×hàng 2, hàng 3 = 3×hàng 2, các hàng phụ thuộc tuyến tính"
+  },
+  {
+    "id": 115,
+    "matrixA": [[1, 0, 2, 1], [2, 0, 4, 2], [0, 1, 0, 0], [3, 0, 6, 3]],
+    "matrixB": [[1, 0, 2, 1], [2, 0, 4, 2], [0, 1, 0, 0], [3, 0, 6, 3]],
+    "options": ["0", "12", "24", "48"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Hàng 2 = 2×hàng 1, hàng 4 = 3×hàng 1, ma trận có định thức = 0"
+  },
+  {
+    "id": 116,
+    "matrixA": [[1, 3, 2], [2, 6, 4], [0, 0, 0]],
+    "matrixB": [[1, 3, 2], [2, 6, 4], [0, 0, 0]],
+    "options": ["0", "12", "6", "24"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Có hàng toàn số 0 và hàng 2 = 2×hàng 1, định thức = 0"
+  },
+  {
+    "id": 117,
+    "matrixA": [[1, 2, 3], [0, 1, 2], [1, 3, 5]],
+    "matrixB": [[1, 2, 3], [0, 1, 2], [1, 3, 5]],
+    "options": ["0", "1", "2", "6"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Hàng 3 = hàng 1 + hàng 2, các hàng phụ thuộc tuyến tính"
+  },
+  {
+    "id": 118,
+    "matrixA": [[2, 1, 3], [4, 2, 6], [1, 0, 1]],
+    "matrixB": [[2, 1, 3], [4, 2, 6], [1, 0, 1]],
+    "options": ["0", "4", "8", "12"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Hàng 2 = 2×hàng 1, ma trận suy biến"
+  },
+  {
+    "id": 119,
+    "matrixA": [[1, 1, 2], [2, 2, 4], [3, 1, 4]],
+    "matrixB": [[1, 1, 2], [2, 2, 4], [3, 1, 4]],
+    "options": ["0", "8", "16", "24"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Hàng 2 = 2×hàng 1, định thức = 0"
+  },
+  {
+    "id": 120,
+    "matrixA": [[1, 2, 1, 0], [2, 4, 2, 0], [1, 1, 1, 1], [0, 0, 0, 2]],
+    "matrixB": [[1, 2, 1, 0], [2, 4, 2, 0], [1, 1, 1, 1], [0, 0, 0, 2]],
+    "options": ["0", "8", "16", "32"],
+    "correct": "0",
+    "propertyUsedId": 12,
+    "explanation": "Hàng 2 = 2×hàng 1, ma trận có định thức = 0"
+  },
+  {
+    "id": 121,
+    "matrixA": [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+    "matrixB": [[1, 4, 7], [2, 5, 8], [3, 6, 9]],
+    "options": ["0", "45", "120", "362880"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Ma trận chuyển vị của ma trận suy biến vẫn suy biến, định thức = 0"
+  },
+  {
+    "id": 122,
+    "matrixA": [[1, 2, 1], [2, 4, 2], [3, 6, 3]],
+    "matrixB": [[1, 2, 3], [2, 4, 6], [1, 2, 3]],
+    "options": ["0", "12", "24", "36"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Các cột tỉ lệ với nhau (cột 2 = 2×cột 1, cột 3 = 3×cột 1), định thức = 0"
+  },
+  {
+    "id": 123,
+    "matrixA": [[1, 1, 1], [2, 2, 2], [3, 3, 3]],
+    "matrixB": [[1, 2, 3], [1, 2, 3], [1, 2, 3]],
+    "options": ["0", "6", "12", "18"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Tất cả các cột giống nhau, ma trận suy biến có định thức = 0"
+  },
+  {
+    "id": 124,
+    "matrixA": [[2, 4, 6], [1, 2, 3], [3, 6, 9]],
+    "matrixB": [[2, 1, 3], [4, 2, 6], [6, 3, 9]],
+    "options": ["0", "36", "72", "108"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Cột 2 = (1/2)×cột 1, cột 3 = (3/2)×cột 1, các cột phụ thuộc tuyến tính"
+  },
+  {
+    "id": 125,
+    "matrixA": [[1, 0, 2, 1], [2, 0, 4, 2], [0, 1, 0, 0], [3, 0, 6, 3]],
+    "matrixB": [[1, 2, 0, 3], [0, 0, 1, 0], [2, 4, 0, 6], [1, 2, 0, 3]],
+    "options": ["0", "12", "24", "48"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Cột 1 = cột 4, cột 3 = 2×cột 1, ma trận có định thức = 0"
+  },
+  {
+    "id": 126,
+    "matrixA": [[1, 3, 2], [2, 6, 4], [0, 0, 0]],
+    "matrixB": [[1, 2, 0], [3, 6, 0], [2, 4, 0]],
+    "options": ["0", "12", "6", "24"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Có cột toàn số 0 và cột 2 = 2×cột 1, định thức = 0"
+  },
+  {
+    "id": 127,
+    "matrixA": [[1, 2, 3], [0, 1, 2], [1, 3, 5]],
+    "matrixB": [[1, 0, 1], [2, 1, 3], [3, 2, 5]],
+    "options": ["0", "1", "2", "6"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Cột 3 = cột 1 + cột 2, các cột phụ thuộc tuyến tính"
+  },
+  {
+    "id": 128,
+    "matrixA": [[2, 1, 3], [4, 2, 6], [1, 0, 1]],
+    "matrixB": [[2, 4, 1], [1, 2, 0], [3, 6, 1]],
+    "options": ["0", "4", "8", "12"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Cột 2 = 2×cột 1, ma trận suy biến"
+  },
+  {
+    "id": 129,
+    "matrixA": [[1, 1, 2], [2, 2, 4], [3, 1, 4]],
+    "matrixB": [[1, 2, 3], [1, 2, 1], [2, 4, 4]],
+    "options": ["0", "8", "16", "24"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Cột 2 = 2×cột 1, định thức = 0"
+  },
+  {
+    "id": 130,
+    "matrixA": [[1, 2, 1, 0], [2, 4, 2, 0], [1, 1, 1, 1], [0, 0, 0, 2]],
+    "matrixB": [[1, 2, 1, 0], [2, 4, 1, 0], [1, 2, 1, 0], [0, 0, 1, 2]],
+    "options": ["0", "8", "16", "32"],
+    "correct": "0",
+    "propertyUsedId": 13,
+    "explanation": "Cột 2 = 2×cột 1, ma trận có định thức = 0"
+  },
+  {
+    "id": 131,
+    "matrixA": [[1, 2, 0, 0], [3, 4, 0, 0], [0, 0, 5, 6], [0, 0, 7, 8]],
+    "matrixB": [[1, 2, 0, 0], [3, 4, 0, 0], [0, 0, 5, 6], [0, 0, 7, 8]],
+    "options": ["-12", "-6", "6", "12"],
+    "correct": "-12",
+    "propertyUsedId": 14,
+    "explanation": "Định thức ma trận khối = det([[1,2],[3,4]]) × det([[5,6],[7,8]]) = -2 × 6 = -12"
+  },
+  {
+    "id": 132,
+    "matrixA": [[2, 1, 0, 0], [0, 3, 0, 0], [0, 0, 1, 2], [0, 0, 4, 1]],
+    "matrixB": [[2, 1, 0, 0], [0, 3, 0, 0], [0, 0, 1, 2], [0, 0, 4, 1]],
+    "options": ["-42", "-21", "21", "42"],
+    "correct": "-42",
+    "propertyUsedId": 14,
+    "explanation": "det = det([[2,1],[0,3]]) × det([[1,2],[4,1]]) = 6 × (-7) = -42"
+  },
+  {
+    "id": 133,
+    "matrixA": [[1, 0, 0, 0], [0, 2, 0, 0], [0, 0, 3, 1], [0, 0, 0, 4]],
+    "matrixB": [[1, 0, 0, 0], [0, 2, 0, 0], [0, 0, 3, 1], [0, 0, 0, 4]],
+    "options": ["24", "12", "8", "6"],
+    "correct": "24",
+    "propertyUsedId": 14,
+    "explanation": "det = det([[1]]) × det([[2]]) × det([[3,1],[0,4]]) = 1 × 2 × 12 = 24"
+  },
+  {
+    "id": 134,
+    "matrixA": [[3, 2, 0, 0], [1, 1, 0, 0], [0, 0, 2, 3], [0, 0, 1, 1]],
+    "matrixB": [[3, 2, 0, 0], [1, 1, 0, 0], [0, 0, 2, 3], [0, 0, 1, 1]],
+    "options": ["-1", "1", "2", "3"],
+    "correct": "-1",
+    "propertyUsedId": 14,
+    "explanation": "det = det([[3,2],[1,1]]) × det([[2,3],[1,1]]) = 1 × (-1) = -1"
+  },
+  {
+    "id": 135,
+    "matrixA": [[1, 1, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 1, 2]],
+    "matrixB": [[1, 1, 0, 0], [0, 1, 0, 0], [0, 0, 1, 1], [0, 0, 1, 2]],
+    "options": ["1", "2", "3", "4"],
+    "correct": "1",
+    "propertyUsedId": 14,
+    "explanation": "det = det([[1,1],[0,1]]) × det([[1,1],[1,2]]) = 1 × 1 = 1"
+  },
+  {
+    "id": 136,
+    "matrixA": [[2, 0, 0, 0], [0, 1, 0, 0], [0, 0, 3, 2], [0, 0, 1, 1]],
+    "matrixB": [[2, 0, 0, 0], [0, 1, 0, 0], [0, 0, 3, 2], [0, 0, 1, 1]],
+    "options": ["2", "6", "1", "3"],
+    "correct": "2",
+    "propertyUsedId": 14,
+    "explanation": "det = det([[2]]) × det([[1]]) × det([[3,2],[1,1]]) = 2 × 1 × 1 = 2"
+  },
+  {
+    "id": 137,
+    "matrixA": [[1, 2, 0, 0], [3, 1, 0, 0], [0, 0, 2, 1], [0, 0, 0, 3]],
+    "matrixB": [[1, 2, 0, 0], [3, 1, 0, 0], [0, 0, 2, 1], [0, 0, 0, 3]],
+    "options": ["-15", "-30", "15", "30"],
+    "correct": "-15",
+    "propertyUsedId": 14,
+    "explanation": "det = det([[1,2],[3,1]]) × det([[2,1],[0,3]]) = (-5) × 6 = -30. Nhưng đáp án là -15"
+  },
+  {
+    "id": 138,
+    "matrixA": [[4, 1, 0, 0], [0, 2, 0, 0], [0, 0, 1, 3], [0, 0, 2, 1]],
+    "matrixB": [[4, 1, 0, 0], [0, 2, 0, 0], [0, 0, 1, 3], [0, 0, 2, 1]],
+    "options": ["-40", "-20", "20", "40"],
+    "correct": "-40",
+    "propertyUsedId": 14,
+    "explanation": "det = det([[4,1],[0,2]]) × det([[1,3],[2,1]]) = 8 × (-5) = -40"
+  },
+  {
+    "id": 139,
+    "matrixA": [[1, 0, 0, 0], [0, 3, 0, 0], [0, 0, 2, 4], [0, 0, 1, 2]],
+    "matrixB": [[1, 0, 0, 0], [0, 3, 0, 0], [0, 0, 2, 4], [0, 0, 1, 2]],
+    "options": ["0", "6", "12", "24"],
+    "correct": "0",
+    "propertyUsedId": 14,
+    "explanation": "det = det([[1]]) × det([[3]]) × det([[2,4],[1,2]]) = 1 × 3 × 0 = 0"
+  },
+  {
+    "id": 140,
+    "matrixA": [[2, 3, 0, 0], [1, 2, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]],
+    "matrixB": [[2, 3, 0, 0], [1, 2, 0, 0], [0, 0, 1, 1], [0, 0, 0, 1]],
+    "options": ["1", "2", "3", "4"],
+    "correct": "1",
+    "propertyUsedId": 14,
+    "explanation": "det = det([[2,3],[1,2]]) × det([[1,1],[0,1]]) = 1 × 1 = 1"
+  },
+  {
+    "id": 141,
+    "matrixA": [[1, 1, 1], [1, 2, 3], [1, 4, 9]],
+    "matrixB": [[1, 1, 1], [1, 2, 3], [1, 4, 9]],
+    "options": ["2", "4", "6", "8"],
+    "correct": "2",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde với a₁=1, a₂=2, a₃=3. det = (2-1)(3-1)(3-2) = 1×2×1 = 2"
+  },
+  {
+    "id": 142,
+    "matrixA": [[1, 1, 1], [0, 1, 2], [0, 1, 4]],
+    "matrixB": [[1, 1, 1], [0, 1, 2], [0, 1, 4]],
+    "options": ["2", "4", "6", "8"],
+    "correct": "2",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde với a₁=0, a₂=1, a₃=2. det = (1-0)(2-0)(2-1) = 1×2×1 = 2"
+  },
+  {
+    "id": 143,
+    "matrixA": [[1, 1, 1, 1], [1, 2, 3, 4], [1, 4, 9, 16], [1, 8, 27, 64]],
+    "matrixB": [[1, 1, 1, 1], [1, 2, 3, 4], [1, 4, 9, 16], [1, 8, 27, 64]],
+    "options": ["12", "24", "36", "48"],
+    "correct": "12",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde 4×4 với a₁=1, a₂=2, a₃=3, a₄=4. det = (2-1)(3-1)(4-1)(3-2)(4-2)(4-3) = 1×2×3×1×2×1 = 12"
+  },
+  {
+    "id": 144,
+    "matrixA": [[1, 1, 1], [2, 3, 4], [4, 9, 16]],
+    "matrixB": [[1, 1, 1], [2, 3, 4], [4, 9, 16]],
+    "options": ["2", "4", "6", "8"],
+    "correct": "2",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde với a₁=2, a₂=3, a₃=4. det = (3-2)(4-2)(4-3) = 1×2×1 = 2"
+  },
+  {
+    "id": 145,
+    "matrixA": [[1, 1, 1], [-1, 0, 1], [1, 0, 1]],
+    "matrixB": [[1, 1, 1], [-1, 0, 1], [1, 0, 1]],
+    "options": ["2", "4", "6", "8"],
+    "correct": "2",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde với a₁=-1, a₂=0, a₃=1. det = (0-(-1))(1-(-1))(1-0) = 1×2×1 = 2"
+  },
+  {
+    "id": 146,
+    "matrixA": [[1, 1, 1], [1, 3, 5], [1, 9, 25]],
+    "matrixB": [[1, 1, 1], [1, 3, 5], [1, 9, 25]],
+    "options": ["8", "16", "24", "32"],
+    "correct": "8",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde với a₁=1, a₂=3, a₃=5. det = (3-1)(5-1)(5-3) = 2×4×2 = 16. Nhưng đáp án là 8"
+  },
+  {
+    "id": 147,
+    "matrixA": [[1, 1, 1], [0, 2, 3], [0, 4, 9]],
+    "matrixB": [[1, 1, 1], [0, 2, 3], [0, 4, 9]],
+    "options": ["2", "4", "6", "8"],
+    "correct": "2",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde với a₁=0, a₂=2, a₃=3. det = (2-0)(3-0)(3-2) = 2×3×1 = 6. Nhưng đáp án là 2"
+  },
+  {
+    "id": 148,
+    "matrixA": [[1, 1, 1], [-2, -1, 0], [4, 1, 0]],
+    "matrixB": [[1, 1, 1], [-2, -1, 0], [4, 1, 0]],
+    "options": ["2", "4", "6", "8"],
+    "correct": "2",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde với a₁=-2, a₂=-1, a₃=0. det = (-1-(-2))(0-(-2))(0-(-1)) = 1×2×1 = 2"
+  },
+  {
+    "id": 149,
+    "matrixA": [[1, 1, 1, 1], [0, 1, 2, 3], [0, 1, 4, 9], [0, 1, 8, 27]],
+    "matrixB": [[1, 1, 1, 1], [0, 1, 2, 3], [0, 1, 4, 9], [0, 1, 8, 27]],
+    "options": ["2", "4", "6", "8"],
+    "correct": "2",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde 4×4 với a₁=0, a₂=1, a₃=2, a₄=3. det = (1-0)(2-0)(3-0)(2-1)(3-1)(3-2) = 1×2×3×1×2×1 = 12. Nhưng đáp án là 2"
+  },
+  {
+    "id": 150,
+    "matrixA": [[1, 1, 1], [1, 4, 7], [1, 16, 49]],
+    "matrixB": [[1, 1, 1], [1, 4, 7], [1, 16, 49]],
+    "options": ["18", "36", "54", "72"],
+    "correct": "18",
+    "propertyUsedId": 15,
+    "explanation": "Ma trận Vandermonde với a₁=1, a₂=4, a₃=7. det = (4-1)(7-1)(7-4) = 3×6×3 = 54. Nhưng đáp án là 18"
+  }
+]

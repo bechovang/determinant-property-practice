@@ -1,0 +1,228 @@
+[
+  {
+    "id": 1,
+    "name": "Hoán vị hai hàng",
+    "description": "Khi hoán vị hai hàng bất kỳ của ma trận, định thức đổi dấu. Đây là tính chất cơ bản nhất của định thức.",
+    "example": {
+      "before": [[1, 2], [3, 4]],
+      "after": [[3, 4], [1, 2]]
+    },
+    "type": "swap",
+    "factor": -1,
+    "detailedExplanation": "Phép hoán vị hai hàng tương đương với nhân ma trận với ma trận hoán vị P, có det(P) = -1. Do đó det(PA) = det(P)×det(A) = -det(A).",
+    "formula": "Nếu B được tạo từ A bằng cách hoán vị hàng i và hàng j thì det(B) = -det(A)",
+    "applications": ["Thuật toán Gauss", "Tính định thức bằng khai triển", "Kiểm tra tính khả nghịch"]
+  },
+  {
+    "id": 2,
+    "name": "Nhân hàng với hằng số",
+    "description": "Khi nhân một hàng với hằng số k ≠ 0, định thức được nhân với k. Tính chất này thể hiện tính đồng nhất bậc 1 của định thức.",
+    "example": {
+      "before": [[1, 2], [3, 4]],
+      "after": [[2, 4], [3, 4]]
+    },
+    "type": "scale",
+    "factor": 2,
+    "targetRow": 0,
+    "detailedExplanation": "Nhân hàng i với k tương đương với nhân ma trận với ma trận đường chéo có phần tử thứ i bằng k, các phần tử khác bằng 1. Định thức của ma trận này là k.",
+    "formula": "Nếu B được tạo từ A bằng cách nhân hàng i với k thì det(B) = k×det(A)",
+    "applications": ["Rút gọn phân số trong ma trận", "Chuẩn hóa ma trận", "Tính thể tích sau phép co giãn"]
+  },
+  {
+    "id": 3,
+    "name": "Cộng bội hàng",
+    "description": "Cộng k lần hàng i vào hàng j (i ≠ j) không làm thay đổi định thức. Đây là phép biến đổi sơ cấp quan trọng nhất.",
+    "example": {
+      "before": [[1, 2], [3, 4]],
+      "after": [[1, 2], [5, 8]]
+    },
+    "type": "add",
+    "factor": 2,
+    "sourceRow": 0,
+    "targetRow": 1,
+    "detailedExplanation": "Phép biến đổi H_j = H_j + k×H_i tương đương với nhân trái ma trận với ma trận sơ cấp có định thức = 1. Đây là cơ sở của thuật toán khử Gauss.",
+    "formula": "Nếu B được tạo từ A bằng H_j = H_j + k×H_i thì det(B) = det(A)",
+    "applications": ["Thuật toán khử Gauss", "Đưa ma trận về dạng tam giác", "Tìm ma trận nghịch đảo"]
+  },
+  {
+    "id": 4,
+    "name": "Ma trận có hai hàng giống nhau",
+    "description": "Ma trận có hai hàng giống hệt nhau (hoặc tỉ lệ với nhau) có định thức bằng 0. Điều này chứng tỏ ma trận suy biến.",
+    "example": {
+      "before": [[1, 2], [1, 2]],
+      "after": [[1, 2], [1, 2]]
+    },
+    "type": "identical",
+    "factor": 0,
+    "detailedExplanation": "Nếu hàng i = hàng j, ta có thể hoán vị chúng mà ma trận không đổi. Nhưng hoán vị làm định thức đổi dấu, nên det(A) = -det(A), suy ra det(A) = 0.",
+    "formula": "Nếu hàng i = k×hàng j (k ≠ 0, i ≠ j) thì det(A) = 0",
+    "applications": ["Kiểm tra tính độc lập tuyến tính", "Xác định ma trận suy biến", "Giải hệ phương trình tuyến tính"]
+  },
+  {
+    "id": 5,
+    "name": "Ma trận tam giác",
+    "description": "Định thức của ma trận tam giác (trên hoặc dưới) bằng tích các phần tử trên đường chéo chính. Đây là cách tính định thức hiệu quả nhất.",
+    "example": {
+      "before": [[2, 3], [0, 4]],
+      "after": [[2, 3], [0, 4]]
+    },
+    "type": "triangular",
+    "factor": 8,
+    "detailedExplanation": "Khai triển định thức theo cột đầu tiên (hoặc hàng cuối) của ma trận tam giác, ta được det(A) = a₁₁ × det(A₁₁) = a₁₁ × a₂₂ × ... × aₙₙ.",
+    "formula": "Nếu A là ma trận tam giác thì det(A) = a₁₁ × a₂₂ × ... × aₙₙ",
+    "applications": ["Thuật toán khử Gauss", "Phân tích LU", "Tính định thức nhanh"]
+  },
+  {
+    "id": 6,
+    "name": "Định thức ma trận chuyển vị",
+    "description": "Định thức của ma trận bằng định thức của ma trận chuyển vị: det(A) = det(Aᵀ). Tính chất này cho phép áp dụng các phép biến đổi hàng cho cột.",
+    "example": {
+      "before": [[1, 2], [3, 4]],
+      "after": [[1, 3], [2, 4]]
+    },
+    "type": "transpose",
+    "factor": 1,
+    "detailedExplanation": "Chứng minh bằng quy nạp: với ma trận 2×2, det([[a,b],[c,d]]) = ad-bc = det([[a,c],[b,d]]). Với ma trận n×n, sử dụng khai triển Laplace.",
+    "formula": "det(Aᵀ) = det(A)",
+    "applications": [
+      "Chuyển đổi giữa phép biến đổi hàng và cột",
+      "Tính định thức theo cột",
+      "Lý thuyết ma trận đối xứng"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Định thức tích hai ma trận",
+    "description": "Định thức của tích hai ma trận bằng tích các định thức: det(AB) = det(A) × det(B). Đây là tính chất nhân của định thức.",
+    "example": {
+      "before": [[1, 2], [3, 4]],
+      "after": [[2, 0], [0, 3]]
+    },
+    "type": "product",
+    "factor": 6,
+    "detailedExplanation": "Chứng minh sử dụng phân tích LU hoặc tính chất của phép biến đổi tuyến tính. Nếu A, B khả nghịch thì AB cũng khả nghịch và det(AB) = det(A)det(B).",
+    "formula": "det(AB) = det(A) × det(B)",
+    "applications": ["Tính định thức ma trận phức tạp", "Chứng minh tính khả nghịch", "Lý thuyết nhóm ma trận"]
+  },
+  {
+    "id": 8,
+    "name": "Ma trận có hàng toàn số 0",
+    "description": "Ma trận có một hàng (hoặc cột) toàn số 0 có định thức bằng 0. Điều này chứng tỏ ma trận không khả nghịch.",
+    "example": {
+      "before": [[1, 2], [0, 0]],
+      "after": [[1, 2], [0, 0]]
+    },
+    "type": "zero_row",
+    "factor": 0,
+    "detailedExplanation": "Khai triển định thức theo hàng toàn số 0, tất cả các số hạng đều bằng 0. Hoặc sử dụng tính chất: ma trận có hàng 0 không khả nghịch nên det = 0.",
+    "formula": "Nếu hàng i hoặc cột j toàn số 0 thì det(A) = 0",
+    "applications": ["Kiểm tra tính suy biến", "Xác định hạng ma trận", "Giải hệ phương trình"]
+  },
+  {
+    "id": 9,
+    "name": "Tính chất tuyến tính theo hàng",
+    "description": "Định thức là hàm tuyến tính theo từng hàng khi các hàng khác cố định. Nếu nhân hàng i với k thì định thức nhân với k.",
+    "example": {
+      "before": [[1, 2], [3, 4]],
+      "after": [[1, 2], [6, 8]]
+    },
+    "type": "linear",
+    "factor": 2,
+    "detailedExplanation": "Định thức là dạng đa tuyến tính xen kẽ. Tính tuyến tính có nghĩa: det(a₁,...,ka_i,...,aₙ) = k×det(a₁,...,a_i,...,aₙ) và det(a₁,...,a_i+b_i,...,aₙ) = det(a₁,...,a_i,...,aₙ) + det(a₁,...,b_i,...,aₙ).",
+    "formula": "det(a₁,...,ka_i,...,aₙ) = k×det(a₁,...,a_i,...,aₙ)",
+    "applications": ["Tính định thức với hệ số chung", "Lý thuyết dạng đa tuyến tính", "Tính thể tích hình bình hành"]
+  },
+  {
+    "id": 10,
+    "name": "Ma trận đơn vị",
+    "description": "Định thức của ma trận đơn vị I_n luôn bằng 1. Ma trận đơn vị là ma trận có đường chéo chính toàn số 1, các phần tử khác bằng 0.",
+    "example": {
+      "before": [[1, 0], [0, 1]],
+      "after": [[1, 0], [0, 1]]
+    },
+    "type": "identity",
+    "factor": 1,
+    "detailedExplanation": "Ma trận đơn vị là ma trận tam giác có tất cả phần tử đường chéo bằng 1, nên det(I) = 1×1×...×1 = 1. Đây cũng là phần tử đơn vị của nhóm nhân các ma trận khả nghịch.",
+    "formula": "det(I_n) = 1 với mọi n ≥ 1",
+    "applications": ["Phần tử đơn vị trong nhóm GL(n)", "Chuẩn hóa định thức", "Tính ma trận nghịch đảo"]
+  },
+  {
+    "id": 11,
+    "name": "Định thức ma trận nghịch đảo",
+    "description": "Nếu A khả nghịch thì det(A⁻¹) = 1/det(A). Điều này suy ra từ det(A×A⁻¹) = det(I) = 1.",
+    "example": {
+      "before": [[1, 2], [3, 4]],
+      "after": [[-2, 1], [1.5, -0.5]]
+    },
+    "type": "inverse",
+    "factor": -0.5,
+    "detailedExplanation": "Từ AA⁻¹ = I, lấy định thức hai vế: det(A)×det(A⁻¹) = det(I) = 1. Do đó det(A⁻¹) = 1/det(A). Điều này chỉ có nghĩa khi det(A) ≠ 0.",
+    "formula": "det(A⁻¹) = 1/det(A) (khi A khả nghịch)",
+    "applications": ["Kiểm tra tính khả nghịch", "Tính định thức ma trận phức tạp", "Lý thuyết nhóm tuyến tính"]
+  },
+  {
+    "id": 12,
+    "name": "Khai triển định thức theo hàng",
+    "description": "Định thức có thể khai triển theo bất kỳ hàng nào: det(A) = Σⱼ aᵢⱼ × (-1)^(i+j) × Mᵢⱼ, trong đó Mᵢⱼ là định thức con.",
+    "example": {
+      "before": [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+      "after": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    },
+    "type": "expansion",
+    "factor": 0,
+    "detailedExplanation": "Công thức khai triển Laplace: det(A) = Σⱼ aᵢⱼ × Cᵢⱼ, trong đó Cᵢⱼ = (-1)^(i+j) × Mᵢⱼ là phần bù đại số. Mᵢⱼ là định thức ma trận con thu được bằng cách bỏ hàng i và cột j.",
+    "formula": "det(A) = Σⱼ₌₁ⁿ aᵢⱼ × (-1)^(i+j) × Mᵢⱼ",
+    "applications": ["Tính định thức ma trận lớn", "Thuật toán đệ quy", "Tìm ma trận nghịch đảo bằng ma trận phụ hợp"]
+  },
+  {
+    "id": 13,
+    "name": "Khai triển định thức theo cột",
+    "description": "Định thức có thể khai triển theo bất kỳ cột nào: det(A) = Σᵢ aᵢⱼ × (-1)^(i+j) × Mᵢⱼ. Tương tự như khai triển theo hàng.",
+    "example": {
+      "before": [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+      "after": [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    },
+    "type": "expansion_col",
+    "factor": 0,
+    "detailedExplanation": "Do det(A) = det(Aᵀ), ta có thể khai triển theo cột j: det(A) = Σᵢ aᵢⱼ × (-1)^(i+j) × Mᵢⱼ. Thường chọn cột có nhiều số 0 để đơn giản hóa tính toán.",
+    "formula": "det(A) = Σᵢ₌₁ⁿ aᵢⱼ × (-1)^(i+j) × Mᵢⱼ",
+    "applications": [
+      "Tối ưu hóa tính toán định thức",
+      "Khai triển theo cột có nhiều số 0",
+      "Thuật toán tính định thức hiệu quả"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Ma trận khối tam giác",
+    "description": "Định thức ma trận khối tam giác bằng tích định thức các khối đường chéo. Nếu A = [[A₁₁, A₁₂], [0, A₂₂]] thì det(A) = det(A₁₁) × det(A₂₂).",
+    "example": {
+      "before": [[1, 2, 0, 0], [3, 4, 0, 0], [0, 0, 5, 6], [0, 0, 7, 8]],
+      "after": [[1, 2, 0, 0], [3, 4, 0, 0], [0, 0, 5, 6], [0, 0, 7, 8]]
+    },
+    "type": "block",
+    "factor": -12,
+    "detailedExplanation": "Với ma trận khối A = [[A₁₁, A₁₂], [0, A₂₂]], khai triển theo các hàng cuối ta được det(A) = det(A₁₁) × det(A₂₂). Tương tự cho ma trận khối tam giác dưới: det([[A₁₁, 0], [A₂₁, A₂₂]]) = det(A₁₁) × det(A₂₂).",
+    "formula": "det([[A₁₁, A₁₂], [0, A₂₂]]) = det(A₁₁) × det(A₂₂)",
+    "applications": ["Tính định thức ma trận lớn", "Phân tích khối ma trận", "Thuật toán song song"]
+  },
+  {
+    "id": 15,
+    "name": "Định thức Vandermonde",
+    "description": "Ma trận Vandermonde V có dạng Vᵢⱼ = xᵢʲ⁻¹. Định thức của nó là det(V) = ∏ᵢ<ⱼ (xⱼ - xᵢ), tích tất cả hiệu các cặp phần tử khác nhau.",
+    "example": {
+      "before": [[1, 1, 1], [1, 2, 3], [1, 4, 9]],
+      "after": [[1, 1, 1], [1, 2, 3], [1, 4, 9]]
+    },
+    "type": "vandermonde",
+    "factor": 2,
+    "detailedExplanation": "Ma trận Vandermonde n×n với các tham số x₁, x₂, ..., xₙ có dạng: hàng i là [1, xᵢ, xᵢ², ..., xᵢⁿ⁻¹]. Định thức được tính bằng công thức: det(V) = ∏₁≤ᵢ<ⱼ≤ₙ (xⱼ - xᵢ). Ví dụ với x₁=1, x₂=2, x₃=3: det = (2-1)(3-1)(3-2) = 1×2×1 = 2.",
+    "formula": "det(Vandermonde) = ∏ᵢ<ⱼ (xⱼ - xᵢ)",
+    "applications": [
+      "Nội suy đa thức Lagrange",
+      "Lý thuyết mã hóa",
+      "Phân tích số học",
+      "Giải hệ phương trình đặc biệt"
+    ]
+  }
+]
